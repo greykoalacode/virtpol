@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FIR</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="left"><a href="index.html">Virtual Police</a></li>
+                <li><a href="#fir">Book a F.I.R</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="page" id="que">
+        <video autoplay width="560" controls id="police">
+            <source src="Oliver.mp4#t=10.3,18" type="video/mp4" preload="metadata">
+        </video>
+        <form id="new">
+            <div class="case">
+            <p class="txt">Elaborate the case:</p>
+                        <textarea
+                                id="comments"
+                                class="input-textarea"
+                                name="description"
+                                placeholder="Describe about the happenings and reason behind this F.I.R"
+                            ></textarea>
+            </div>
+            <div class="case">
+            <p class="txt">Any Suspicion(s) / Unusual Activity(s)</p>
+                        <textarea
+                                id="comments"
+                                class="input-textarea"
+                                name="description"
+                                placeholder="Enter details on your Suspicion/Unusual Activity observed during the case"
+                            ></textarea>
+            </div>
+            <div class="case">
+            <p><h2>Disclaimer:</h2>
+            As per the prevailing laws, FIR of a major crime (′cognizable crimes like theft, burglary, motor vehicle theft, accident, chain-snatching, assault, rape, murder, attempt to commit murder, robbery, dacoity, extortion etc) can be registered at Police Station/Virtual Police.</p>
+            <p><input
+                              name="prefer"
+                              value="front-end-projects"
+                              type="checkbox"
+                              class="input-checkbox"
+                            />I certify that the information provided by me in above form is accurate and correct as per best of my knowledge. I understand that withholding of information or giving false information is a criminal offense and may result in legal action against me.</p>
+            </div>
+            </form>
+        </div>
+        <a class="link" style="float:left"href="index.html"><- Back</a>
+        <a class="link" style="float:right" href="verify.html">Proceed -></a>
+    </body>
+</html>

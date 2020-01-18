@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Virtual Police</title> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+    </head>
+    <body>
+        <main>
+            <nav>
+                <ul>
+                    <li class="left"><a href="index.html">Virtual Police</a></li>
+                    <li><a href="#fir">Book a F.I.R</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <section id="intro">
+                    <img id="pic" alt="police" src="https://cdn.clipart.email/d2b48e0c897432c3401863d8ebec0de1_why-states-do-not-want-police-reform_500-500.jpeg">
+                    <div class="txt">
+                        <h1 class="tag">Welcome to Virtual Police</h1>
+                        <p class="tagline">Platform to lodge F.I.R at ease, in minutes</p>
+                        <p class="tagline">For cases of emergency, please Dial 100</p>
+                        <a href="#fir"><button onclick="playVid()" type="button" class="btn">Get Started</button></a>
+                    </div>
+                </section>
+                <section id="about">
+                        <h2>About Us</h2>
+                        <p>Virtual Police is a web-application made for the purpose of automating the most important part of a case: First Information Report (F.I.R.). User will be authenticated by means of OTP through their phone number/ Aadhar Card Number </p>
+                 </section>
+                <section  class="part2">
+                    <h2 id="fir" class="state">FIR</h2>
+                    <video width="560" controls id="police">
+                        <source src="Oliver.mp4#t=0,10" type="video/mp4" preload="metadata">
+                    </video>
+                    <form>
+                        <div class ="qn">
+                        <label id="name-label" for="name">Name*</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+                        </div>
+                        <div class="qn">
+                        <label id="number-label" for="number">Phone Number* [Format: +91-(10 digit number)]</label>
+                        <input type="tel" pattern="+91-[1-9]{10}" name="number" placeholder="Enter your number" required/>
+                        </div>
+                        <div class="qn">
+                            <label id="number-label" for="number">Alternate Phone Number*</label>
+                            <input type="tel" pattern="+91-[1-9]{10}" name="number" placeholder="Enter your number" required/>
+                            </div>
+                        <div class="qn">
+                        <label for="gender">Gender</label>
+                        <select id="dropdown" name="gender" class="form-control" required>
+                            <option disabled selected value>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="transgender">Transgender</option>
+                        </select>
+                        </div>
+                        <div class="qn">
+                            <label id="number-label" for="number"
+                            >Age*</label
+                            >
+                            <input
+                                type="number"
+                                name="age"
+                                id="number"
+                                min="5"
+                                max="99"
+                                class="form-control"
+                                placeholder="Age"
+                            />
+                        </div>
+                        <div class="qn">
+                            <label id="email-label" for="email">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="form-control"
+                                placeholder="Enter your Email"
+                                required
+                            />
+                        </div>
+                        <div class="qn">
+                            <label for="number">Aadhar Number</label>
+                            <input type="tel" pattern="[1-9]{3}-[0-9]{1}-[1-9]{3}-[0-9]{1}-[1-9]{3}-[0-9]{1}" name="aadhar" placeholder="Enter your Aadhar no." required/>
+                        </div>
+
+                        <div class="qn">
+                            <p>Address:</p>
+                            <textarea
+                            id="comments"
+                            class="input-textarea"
+                            name="address"
+                            placeholder="Enter your address"
+                        ></textarea>
+                        </div>
+                        <div class="qn">
+                            <label name="category">Enter the category of the case:</label>
+                            <select id="dropdown" name="role" class="form-control" required>
+                                <option disabled selected value>Select category</option>
+                                <option value="juvenile">Juvenile Aid Protection</option>
+                                <option value="cyber">Cyber Crime</option>
+                                <option value="antinarc">Anti Narcotics</option>
+                                <option value="women">Crime Against Women</option>
+                                <option value="theft">Theft</option>
+                                <option value="forgery">Forgery</option>
+                                <option value="homicide">Homicide</option>
+                                <option value="prop">Property Crime</option>
+                                <option value="harassment">Harassment</option>
+                                <option value="humantraf">Anti Human Trafficking</option>
+                            </select>
+                            
+                        </div>
+                    </form>
+                    <a class="link" href="fir.html">Proceed</a>
+                </section>
+            </div>
+            
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

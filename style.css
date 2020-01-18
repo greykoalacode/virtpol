@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Mono&display=swap");
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.state{
+    background-color: #c3b091;
+    color: white;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: auto;   
+}
+li{
+    font-family: 'Roboto Mono', monospace;
+    display: inline;
+    margin: 0.5em;
+}
+nav{
+    
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+.left{
+    margin-right: auto;
+}
+section{
+    height: 60vh;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#intro{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(90px,1fr));
+    grid-column-gap: 2em;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+img{
+    grid-column: 1/1;
+    width: 35vw;
+}
+h1{
+    font-size: 5vw;
+}
+.tagline{
+    font-size: 2vw;
+}
+.btn, .link{
+    font-size: 1.25vw;
+    border-radius: 20px;
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+    background-color:#c3b091;
+}
+video{
+    border-radius: 3em;
+}
+#fir{
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px 0 100px;
+    width: auto;
+    border-radius: 2em;
+
+}
+.qn{
+    margin:0.5em;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-right: 1em;
+    font-size: 1.25em;
+}
+input,option{
+    font-size: 1.2em;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+select{
+    font-size: 1.1em;
+}
+#verify{
+    margin-top: 10vw;
+    text-align: center;
+}
+.page{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cen{
+    padding: 1em;
+    flex-direction: column;
+}
+.case{
+    display: flex;
+    flex-direction: column;
+}
+#que{
+    flex-direction: column;
+    align-items: center;
+}
+
+#sub{
+    margin-top: 1.5em;
+    font-size: medium;
+}
+
+.part2{
+    margin-top: auto;
+}
+.txt{
+    font-size: medium;
+}
+#new{
+    margin: 0 100px 0 100px;
+}
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: auto;   
+}
+li{
+    display: inline;
+    margin: 0.5em;
+}
+nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+.left{
+    margin-right: auto;
+}
+section{
+    height: 100vh;
+}
+#intro{
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+img{
+    grid-column: 1/1;
+}
+h1{
+    font-size: 5vw;
+}
+.tagline{
+    font-size: 2vw;
+}
+.get-start {
+    font-size: 1.25vw;
+    border-radius: 20px;
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+}
+video{
+    border-radius: 3em;
+}
+#fir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: auto;
+    border: 0px solid aqua;
+    border-radius: 2em;
+
+}
+.qn{
+    margin:0.5em;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-right: 1em;
+    font-size: 1.25em;
+}
+input, select,option{
+    font-size: 1.25em;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+#verify{
+    margin-top: 10vw;
+    text-align: center;
+}
+@media(max-width: 780px)
+{
+    #intro{
+        margin-top: 5vw;
+    }
+    .part2{
+        font-size: small;
+    }
+    video{
+        width:250px;
+        border-radius: 20px;;
+    }
+    section{
+        height: 35vh;
+    }
+    nav{
+        font-size: small;
+    }
+    .link{
+        font-size: medium;
+    }
+}
+@media(max-width: 400px)
+{
+     input{
+         font-size: 0.5em;
+     }
+    #about{
+        margin-top: 2vh;
+        font-size: 0.65em;
+        text-align: justify;
+    }
+    #fir{
+        margin-top: 10vh;
+    }
+    section{
+        height: 25vh;
+    }
+    .part2{
+        font-size: 0.6em;
+    }
+    nav{
+        font-size: 0.6em;
+    }
+}
+#about{
+    margin-top: 10vw;
+}
+.linkbr{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap:2em;
+    align-items: stretch;
+
+}

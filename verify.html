@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="left"><a href="index.html">Virtual Police</a></li>
+                <li><a href="#fir">Book a F.I.R</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="page">
+            <video autoplay width="560" controls id="police">
+                <source src="Oliver.mp4#t=18.7,25" type="video/mp4" preload="metadata">
+            </video>
+            <br>
+            <br>
+            <h2>OTP has been sent to your mobile number. Please enter the OTP</h2>
+            <input type="tel" pattern="[0-9]{4}"/>
+            <button id="sub" onclick="playVid()" type="button">Submit</button>
+            <div class="linkbr">
+            <a class="link" style="float:left"href="index.html"><- Back</a>
+            <a class="link" style="float:right" href="final.html">Proceed -></a>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
